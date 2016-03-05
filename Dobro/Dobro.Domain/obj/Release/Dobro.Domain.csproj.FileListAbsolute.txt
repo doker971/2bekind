@@ -1,0 +1,17 @@
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Dobro.Domain.dll.config
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Dobro.Domain.dll
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Dobro.Domain.pdb
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\EntityFramework.dll
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\EntityFramework.SqlServer.dll
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Microsoft.Web.Infrastructure.dll
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Ninject.dll
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Ninject.Web.Common.dll
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Ninject.Web.Mvc.dll
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\WebActivatorEx.dll
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\EntityFramework.xml
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\EntityFramework.SqlServer.xml
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Ninject.xml
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Ninject.Web.Common.xml
+P:\visual projects\Dobro\Dobro.Domain\bin\Release\Ninject.Web.Mvc.xml
+P:\visual projects\Dobro\Dobro.Domain\obj\Release\Dobro.Domain.dll
+P:\visual projects\Dobro\Dobro.Domain\obj\Release\Dobro.Domain.pdb

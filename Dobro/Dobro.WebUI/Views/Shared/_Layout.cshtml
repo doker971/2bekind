@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title – приложение ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <section class="glavnaya">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2"></div>
+                <!-- /.col-md-offset-2 -->
+                <div class="col-md-10 text-center">
+                    <p class="head">Главная - дела</p>
+                </div>
+                <!-- /.col-md-10 text-center -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-2 left">
+                    <div>
+                        <img src=@Url.Content("~/img/case.png") />
+                        <p>Профиль</p>
+                    </div>
+                    <div>
+                        <img src=@Url.Content("~/img/case.png") />
+                        <p>Дела</p>
+                    </div>
+                    <div>
+                        <img src=@Url.Content("~/img/shop.png") />
+                        <p>Вознаграждения</p>
+                    </div>
+                    <div>
+                        <img src=@Url.Content("~/img/rating.png") />
+                        <p>Рейтинг</p>
+                    </div>
+                    <div>
+                        <img src=@Url.Content("~/img/setting.png") />
+                        <p>Настройки</p>
+                    </div>
+                </div>
+                <!-- /.col-md-4 -->
+                @RenderBody()
+                <div class="col-md-2 adv">
+                    <img src="http://www.google.com/wssynd/mobile_content/images/mobile_content_js200x2001a.gif" />
+                    <img src="http://www.google.com/wssynd/mobile_content/images/mobile_content_js200x2001a.gif" />
+                    <img src="http://www.google.com/wssynd/mobile_content/images/mobile_content_js200x2001a.gif" />
+                </div>
+                <!-- /.col-md-2 adv -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.prize -->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿@model IEnumerable<Dobro.Domain.Entities.Doing>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    
+<div class="col-md-8 right">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-xs-1 navigation left slidesjs-previous slidesjs-navigation">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </div>
+                <!-- /.col-xs-1 -->
+                <div class="col-xs-10">
+                    <div class="block" id="blocks">
+                        @foreach (var doing in Model)
+                        {
+                            <div class="row slide">
+                                <div class="col-xs-2 left">
+                                    <img src="http://ww1.prweb.com/prfiles/2014/04/10/11752526/gI_134971_best-image-web-hosting.png" />
+                                    <img src=@Url.Content("~/img/case.png") />
+                                    <img src=@Url.Content("~/img/shop.png") />
+                                    <img src=@Url.Content("~/img/rating.png") />
+                                    <img src=@Url.Content("~/img/setting.png") />
+                                </div>
+                                <!-- /.col-xs-4 -->
+                                <div class="col-xs-10">
+                                    <div class="block">
+                                        <div class="row head">
+                                            <div class="col-xs-6">
+                                                @doing.Metro
+                                                <br />
+                                                <img src="http://s1.iconbird.com/ico/2013/11/504/w128h1281385326534bolt.png" height="30" width="30" />
+                                                <img src="http://s1.iconbird.com/ico/2013/11/504/w128h1281385326534bolt.png" height="30" width="30" />
+                                                <img src="http://s1.iconbird.com/ico/2013/11/504/w128h1281385326534bolt.png" height="30" width="30" />
+                                            </div>
+                                            <!-- /.col-xs-6 -->
+                                            <div class="col-xs-6">
+                                                @doing.StartTime.Hour<br />
+                                            
+                                            </div>
+                                            <!-- /.col-xs-6 -->
+                                        </div>
+                                        <!-- /.row -->
+                                        <div class="row">
+                                            <div class="col-xs-12 text-center main">
+                                                <p>@doing.Name</p>
+                                                <p>@doing.Description</p>
+                                            </div>
+                                            <!-- /.col-xs-12 text-center main -->
+                                        </div>
+                                        <!-- /.row -->
+                                    </div>
+                                    <!-- /.block -->
+                                    <div class="row">
+                                        <div class="col-xs-12 text-center">
+                                            <!--<button class="btn btn-success btn-lg" id="">Приступить</button>-->
+                                            @Ajax.ActionLink("Приступить", "", new
+                                       { },new AjaxOptions {
+                                           
+                                           Url = Url.RouteUrl("Default", new {
+                                               controller = "Doing",
+                                               action = "Choose",
+                                               id = doing.Id,
+                                           }),
+                                           HttpMethod = "POST"
+                                       }, new {
+                                           @class = "btn btn-success btn-lg"
+                                       })
+                                            
+                                        </div>
+                                        <!-- /.col-xs-12 text-center -->
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.col-xs-10 -->
+                            </div>
+                        }
+                        <!-- /.row .slide -->
+                    </div>
+                    <!-- /.block -->
+                </div>
+                <!-- /.col-xs-10 -->
+                <div class="col-xs-1 navigation right slidesjs-next slidesjs-navigation">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </div>
+                <!-- /.col-xs-1 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.col-md-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="block-bottom">
+                <div class="cycle"></div>
+                <div class="row collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="col-md-12">
+                        <img src="http://a.deviantart.net/avatars/a/b/absol-fimbulvetr.png?1" />
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Lorem ipsum <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Lorem ipsum.</a></li>
+                                <li><a href="#">Lorem ipsum.</a></li>
+                                <li><a href="#">Lorem ipsum.</a></li>
+                                <li><a href="#">Lorem ipsum.</a></li>
+                                <li><a href="#">Lorem ipsum.</a></li>
+                            </ul>
+                        </div>
+                        <br />
+                        <img src="http://a.deviantart.net/avatars/a/b/absol-fimbulvetr.png?1" /><input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" /><br />
+                        <img src="http://a.deviantart.net/avatars/a/b/absol-fimbulvetr.png?1" /><button class="btn btn-success">1</button><button class="btn btn-success">2</button>
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.block-bottom -->
+        </div>
+        <!-- /.col-md-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.col-md-8 -->
